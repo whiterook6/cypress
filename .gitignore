@@ -1,0 +1,5 @@
+.DS_Store
+
+# from client folder
+phonegap/
+node_modules/
