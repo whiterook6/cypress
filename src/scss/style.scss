@@ -1,0 +1,11 @@
+@import "action-sheets";
+@import "page-content";
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+// Fixes bottom scroll jump when translatingY
+.overflow-hidden {
+	overflow-y: hidden;
+}

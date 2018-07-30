@@ -1,0 +1,11 @@
+.page-content {
+	transition: all 250ms ease;
+
+	&.slide-down {
+		transform: translateY(100px);
+	}
+
+	&.slide-up {
+		transform: translateY(-100px);
+	}
+}
