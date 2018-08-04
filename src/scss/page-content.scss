@@ -1,5 +1,7 @@
+@import "constants";
+
 .page-content {
-	transition: all 250ms ease;
+	transition: all $animation_duration $animation_easing;
 
 	&.slide-down {
 		transform: translateY(100px);

@@ -1,5 +1,12 @@
 @import "action-sheets";
+@import "modal";
 @import "page-content";
+@import "typography";
+
+html, body {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
 
 ::-webkit-scrollbar { 
     display: none; 
@@ -8,4 +15,5 @@
 // Fixes bottom scroll jump when translatingY
 .overflow-hidden {
 	overflow-y: hidden;
+	min-height: 100%;
 }
