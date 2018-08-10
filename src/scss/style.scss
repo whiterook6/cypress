@@ -5,6 +5,8 @@
 
 html, body {
 	height: 100%;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
 }
 
 ::-webkit-scrollbar { 

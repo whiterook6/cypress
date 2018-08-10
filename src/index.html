@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 	<head>
 		<title>Cypress</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="./assets/vendor.css" />
 		<link rel="stylesheet" type="text/css" href="./assets/app.css" />
 	</head>
 	<body>
 		<div class="overflow-hidden">
-			<div class="page-content">
+			<div class="page-content" id="page-content">
 				<h1>H1 Header</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida dolor sed magna sagittis finibus eget quis est. Nullam eget erat ac arcu vehicula feugiat eu ut dui. Pellentesque varius quam fringilla urna luctus semper. Integer ultricies pharetra lectus in egestas.</p>
 
 				<p>Curabitur tellus dolor, aliquam sit amet elit vitae, porta ornare odio. Vestibulum ac blandit mauris, et dictum orci. Donec non iaculis mi, ut eleifend neque. Duis lectus ligula, pharetra at lorem ut, molestie volutpat massa. Cras condimentum elit ac porta rutrum.</p>
 
 				<h2>H2 Header</h2>
+<p style="text-align:center">
+				<button onClick="showTop()">Show Top</button>
+				<button onClick="showRight()">Show Right</button>
+				<button onClick="showBottom()">Show Bottom</button>
+				<button onClick="showLeft()">Show Left</button>
+</p>
 				<p>Mauris facilisis, ex vitae dapibus tempor, elit mi interdum leo, eget sagittis odio felis ut sem. Fusce sed justo quis ex scelerisque efficitur id sed nunc. Ut ut nibh arcu. Donec nec ipsum molestie, ornare ante eu, volutpat augue.</p>
 
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida dolor sed magna sagittis finibus eget quis est. Nullam eget erat ac arcu vehicula feugiat eu ut dui. Pellentesque varius quam fringilla urna luctus semper. Integer ultricies pharetra lectus in egestas.</p>
@@ -25,11 +31,13 @@
 			</div>
 		</div>
 
-		<div class="modal-blur"></div>
-		<div class="action-sheet top">Action Sheet Bottom</div>
+		<div id="modal-blur" class="modal-blur" onClick="hideMenu()"></div>
+		<div id="action-sheet-top" class="action-sheet top">Action Sheet Top</div>
+		<div id="action-sheet-right" class="action-sheet right">Action Sheet Right</div>
+		<div id="action-sheet-bottom" class="action-sheet bottom">Action Sheet Bottom</div>
+		<div id="action-sheet-left" class="action-sheet left">Action Sheet Left</div>
 
-		</div>
-		<script type="text/js" src="./assets/vendor.js"></script>
-		<script type="text/js" src="./assets/app.js"></script>
+		<script type="text/javascript" src="./assets/vendor.js"></script>
+		<script type="text/javascript" src="./assets/app.js"></script>
 	</body>
 </html>
