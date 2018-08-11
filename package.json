@@ -32,6 +32,7 @@
     "build": "./node_modules/webpack/bin/webpack.js --display-modules --progress --config ./webpack.config.js"
   },
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "reset-css": "^4.0.1"
   }
 }

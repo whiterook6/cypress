@@ -10,7 +10,8 @@ module.exports = {
 			'./src/scss/style.scss',
 		],
 		vendor: [
-			'reset-css'
+			'reset-css',
+			'font-awesome/css/font-awesome.css',
 		],
 	},
 	output: {
