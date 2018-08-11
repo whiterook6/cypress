@@ -1,13 +1,20 @@
-@import "_action-sheets";
-@import "_modal";
 @import "_buttons";
-@import "_page-content";
 @import "_typography";
+@import "_menu";
+@import "_lists";
+@import "_cards";
+@import "_progress-bars";
 
 html, body {
 	height: 100%;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 ::-webkit-scrollbar { 
@@ -18,4 +25,9 @@ html, body {
 .overflow-hidden {
 	overflow-y: hidden;
 	min-height: 100%;
+}
+
+body {
+	background: linear-gradient(to bottom, #6D29BE, #FFAAA8);
+	color: white;
 }

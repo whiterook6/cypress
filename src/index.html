@@ -6,39 +6,70 @@
 		<link rel="stylesheet" type="text/css" href="./assets/app.css" />
 	</head>
 	<body>
-		<div class="overflow-hidden">
-			<div class="page-content" id="page-content">
-				<h1>H1 Header</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida dolor sed magna sagittis finibus eget quis est. Nullam eget erat ac arcu vehicula feugiat eu ut dui. Pellentesque varius quam fringilla urna luctus semper. Integer ultricies pharetra lectus in egestas.</p>
+		<div class="menu menu-fixed-top">
+			<button class="menu-left btn btn-square"><i class="fa fa-align-left"></i></button>
+			<span class="menu-title">TODO</span>
+			<button class="menu-right btn btn-square"><i class="fa fa-search"></i></button>
+		</div>
+		<div class="content has-menu">
 
-				<p>Curabitur tellus dolor, aliquam sit amet elit vitae, porta ornare odio. Vestibulum ac blandit mauris, et dictum orci. Donec non iaculis mi, ut eleifend neque. Duis lectus ligula, pharetra at lorem ut, molestie volutpat massa. Cras condimentum elit ac porta rutrum.</p>
+			<div class="hero">
+				<h1>Hello, Jane</h1>
+				<p>High speed, low drag</p>
+				<p>You have 3 tasks for today.</p>
+			</div>
 
-				<h2>H2 Header</h2>
-<p style="text-align:center">
-				<button class="btn" onClick="showTop()">Show Top</button>
-				<button class="btn" onClick="showRight()">Show Right</button>
-				<button class="btn" onClick="showBottom()">Show Bottom</button>
-				<button class="btn" onClick="showLeft()">Show Left</button>
-</p>
-<p style="text-align:center">
-				<button class="btn"><i class="fa fa-user-plus"></i></button>
-</p>
-				<p>Mauris facilisis, ex vitae dapibus tempor, elit mi interdum leo, eget sagittis odio felis ut sem. Fusce sed justo quis ex scelerisque efficitur id sed nunc. Ut ut nibh arcu. Donec nec ipsum molestie, ornare ante eu, volutpat augue.</p>
-
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida dolor sed magna sagittis finibus eget quis est. Nullam eget erat ac arcu vehicula feugiat eu ut dui. Pellentesque varius quam fringilla urna luctus semper. Integer ultricies pharetra lectus in egestas.</p>
-
-				<h3>H3 Header</h3>
-				<p>Curabitur tellus dolor, aliquam sit amet elit vitae, porta ornare odio. Vestibulum ac blandit mauris, et dictum orci. Donec non iaculis mi, ut eleifend neque. Duis lectus ligula, pharetra at lorem ut, molestie volutpat massa. Cras condimentum elit ac porta rutrum.</p>
-				
-				<p>Mauris facilisis, ex vitae dapibus tempor, elit mi interdum leo, eget sagittis odio felis ut sem. Fusce sed justo quis ex scelerisque efficitur id sed nunc. Ut ut nibh arcu. Donec nec ipsum molestie, ornare ante eu, volutpat augue.</p>
+			<div style="padding: 1rem">
+				<div class="card">
+					<div class="menu">
+						<button class="menu-left btn btn-square"><i class="fa fa-share-alt"></i></button>
+						<span class="menu-title"></span>
+						<button class="menu-right btn btn-square"><i class="fa fa-trash"></i></button>
+					</div>
+					<div class="card-bottom">
+						<h2>5 tasks</h2>
+						<h1>Personal</h1>
+						<div class="progress">
+							<div class="progress-bar">
+								<div class="progress-complete" style="width:25%"></div>
+							</div>
+							<div class="progress-label">25%</div>
+						</div>
+						<ul class="checklist">
+							<li>
+								<i class="fa fa-square-o"></i><span class="middle">Item 1</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-square-o"></i><span class="middle">Item 2</span>
+							</li>
+							<li>
+								<i class="fa fa-square-o"></i><span class="middle">Item 3</span>
+							</li>
+						</ul>
+						<ul class="checklist disabled">
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 4</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 5</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 4</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 5</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 4</span><i class="fa fa-trash right"></i>
+							</li>
+							<li>
+								<i class="fa fa-check-square-o"></i><span class="middle">Item 5</span><i class="fa fa-trash right"></i>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="modal-blur" class="modal-blur" onClick="hideMenu()"></div>
-		<div id="action-sheet-top" class="action-sheet top">Action Sheet Top</div>
-		<div id="action-sheet-right" class="action-sheet right">Action Sheet Right</div>
-		<div id="action-sheet-bottom" class="action-sheet bottom">Action Sheet Bottom</div>
-		<div id="action-sheet-left" class="action-sheet left">Action Sheet Left</div>
 
 		<script type="text/javascript" src="./assets/vendor.js"></script>
 		<script type="text/javascript" src="./assets/app.js"></script>

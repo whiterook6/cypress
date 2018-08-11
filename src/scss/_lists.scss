@@ -1,0 +1,30 @@
+.checklist {
+	> li {
+		height: 2rem;
+		line-height: 2rem;
+		border-bottom: 1px solid #ddd;
+		color: #999;
+		list-style: none;
+		font-weight: bold;
+		display: flex;
+
+		> .fa {
+			width: 2rem;
+			height: 2rem;
+			line-height: 2rem;
+
+			&.right {
+				text-align: right;
+			}
+		}
+
+		> .middle {
+			flex: 1;
+		}
+	}
+
+	&.disabled {
+		opacity: 0.75;
+	}
+}
+

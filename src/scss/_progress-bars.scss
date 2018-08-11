@@ -1,0 +1,25 @@
+.progress {
+	display: flex;
+	line-height: 2rem;
+	align-items: center;
+
+	.progress-bar {
+		display: block;
+		height: 2px;
+		background-color: #ccc;
+		flex: 1;
+
+		.progress-complete {
+			height: 2px;
+			background-color: #69E3FF;
+		}
+	}
+
+	.progress-label {
+		font-size: small;
+		font-weight: bold;
+		width: 2.5rem;
+		text-align: right;
+		line-height: 2rem;
+	}
+}

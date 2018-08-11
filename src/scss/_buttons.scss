@@ -1,22 +1,72 @@
 @import "_constants";
 
 .btn {
-	font-family: 'Lato', sans-serif;
-	background-color: #271160;
+	display: inline-block;
+	font-family: 'Quicksand', sans-serif;
+	background: none;
 	border-radius: 3px;
 	border: none;
-	color: white;
-	font-size: small;
+	color: inherit;
+	font-size: 1rem;
 	font-weight: bold;
+	height: 2rem;
 	line-height: 2rem;
 	min-width: 2rem;
 	outline: none;
 	padding: 0 0.5rem;
+	text-align: center;
 	transition: all $animation_duration $animation_easing;
 
 	&:active {
+		color: white;
 		background-color: #69E3FF;
-		transition: none;
-		box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 3px 2px rgba(0,0,0,0.24);
+		transition: none; // immedidately on for immediate feedback
+		box-shadow: $drop_shadow;
+	}
+
+	&.btn-circle {
+		border-radius: 100rem;
+	}
+
+	&.btn-square, &.btn-circle {
+		width: 2rem;
+		height: 2rem;
+		padding: 0;
+	}
+
+	&.btn-large {
+		min-width: 3rem;
+		line-height: 3rem;
+		font-size: 1.5rem;
+		height: 3rem;
+		padding: 0 1rem;
+
+		&.btn-square, &.btn-circle {
+			width: 3rem;
+			height: 3rem;
+			padding: 0;
+		}
+
+		&:active {
+			box-shadow: $drop_shadow_large;
+		}
+	}
+
+	&.btn-small {
+		min-width: 1.5rem;
+		line-height: 1.5rem;
+		font-size: 0.75rem;
+		height: 1.5rem;
+		padding: 0 0.33rem;
+
+		&.btn-square, &.btn-circle{
+			width: 1.5rem;
+			height: 1.5rem;
+			padding: 0;
+		}
+
+		&:active {
+			box-shadow: $drop_shadow_small;
+		}
 	}
 }

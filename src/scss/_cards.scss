@@ -1,0 +1,20 @@
+@import "_constants";
+
+.card {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: $drop_shadow_large;
+	color: #666;
+
+	.card-top {
+		padding: 0.5rem;
+	}
+
+	.card-bottom {
+		padding: 1rem;
+	}
+
+	h1, h2, h3 {
+		margin: 0;
+	}
+}
