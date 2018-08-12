@@ -21,13 +21,28 @@ html {
     display: none; 
 }
 
-// Fixes bottom scroll jump when translatingY
-.overflow-hidden {
-	overflow-y: hidden;
-	min-height: 100%;
-}
-
 body {
 	background: linear-gradient(to bottom, #6D29BE, #FFAAA8);
 	color: white;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+}
+
+.hero {
+	padding: 1rem 3rem;
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+}
+
+.cards {
+	flex: 1;
 }

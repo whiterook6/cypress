@@ -15,16 +15,5 @@
 	.menu-right {
 		float: right;
 	}
-
-	&.menu-fixed-top {
-		position: fixed;
-		left: 0;
-		top: 0;
-		right: 0;
-	}
-}
-
-.content.has-menu {
-	padding-top: 3rem;
 }
 
