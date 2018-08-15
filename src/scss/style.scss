@@ -9,10 +9,15 @@ html, body {
 	height: 100%;
 	-ms-touch-action: manipulation;
 	touch-action: manipulation;
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-user-select: none;
 }
+
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -30,19 +35,24 @@ body {
 }
 
 .hero {
-	padding: 1rem 3rem;
+	padding: 3rem 3rem 1rem;
 
-	h1 {
-		font-size: 3rem;
+	.profile {
+		$width: 4rem;
+		background-color: white;
+		height: $width;
+		width: $width;
+		box-shadow: $drop_shadow;
+		border-radius: $width / 2;
+		margin-bottom: 2rem;
 	}
 
-	h2 {
-		font-size: 1rem;
-		font-weight: bold;
+	.title {
+		font-size: 3rem;
 		margin-bottom: 1rem;
 	}
-}
 
-.cards {
-	flex: 1;
+	.lead {
+		margin-bottom: 1rem;
+	}
 }
