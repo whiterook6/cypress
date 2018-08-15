@@ -2,18 +2,13 @@
 	height: 3rem;
 	text-align: center;
 	padding: 0.5rem;
+	display: flex;
+	align-items: center;
 
 	.menu-title {
 		line-height: 2rem;
 		font-weight: bold;
-	}
-
-	.menu-left {
-		float: left;
-	}
-
-	.menu-right {
-		float: right;
+		flex: 1;
 	}
 }
 

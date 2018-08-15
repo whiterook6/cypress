@@ -28,6 +28,13 @@
 
 	.card-top {
 		flex: 1;
+
+		.menu .menu-title .pull-bar {
+			height: 4px;
+			border-radius: 2px;
+			background: #666;
+			margin: 0 4rem;
+		}
 	}
 
 	.card-bottom {
