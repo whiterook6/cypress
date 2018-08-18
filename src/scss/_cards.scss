@@ -18,6 +18,7 @@
 }
 
 .card {
+	position: relative;
 	background-color: white;
 	border-radius: 0.25rem;
 	box-shadow: $drop_shadow_large;
