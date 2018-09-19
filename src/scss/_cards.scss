@@ -12,28 +12,40 @@
 		line-height: 2rem;
 	}
 
-	.card {
+	.card-container {
 		flex: 1;
+		position: relative;
 	}
 }
 
 .card {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	background-color: white;
 	border-radius: 0.25rem;
 	box-shadow: $drop_shadow_large;
 	color: #666;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 
 	.card-top {
 		flex: 1;
 
-		.menu .menu-title .pull-bar {
-			height: 4px;
-			border-radius: 2px;
-			background: #666;
-			margin: 0 4rem;
+		.menu .menu-title {
+			height: 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.pull-bar {
+				height: 4px;
+				border-radius: 2px;
+				background: #666;
+				margin: 0 4rem;
+			}
 		}
 	}
 
